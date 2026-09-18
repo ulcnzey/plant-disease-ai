@@ -1,8 +1,15 @@
+# Python virtual environment
 .venv/
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-.vscode/
 
 # Dataset
 dataset/
+
+# Trained Keras models
+models/*.keras
+
+# Training outputs
+output/
+
+# Python cache
+__pycache__/
+*.pyc
