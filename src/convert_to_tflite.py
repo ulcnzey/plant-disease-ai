@@ -19,10 +19,8 @@ print("🔄 TFLite dönüşümü başlıyor...")
 # TFLite converter
 converter = tf.lite.TFLiteConverter.from_keras_model(model)
 
-# Optimize et
-converter.optimizations = [tf.lite.Optimize.DEFAULT]
-
-# Dönüştür
+# İlk aşamada optimizasyon kullanmıyoruz.
+# Böylece float32 model elde ediyoruz.
 tflite_model = converter.convert()
 
 # Dosyaya kaydet
